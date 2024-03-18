@@ -8,24 +8,24 @@ highlighter: rouge
 
 markdown: kramdown
 
-repository: NBCLab/nbclab.github.io
+repository: isl-uva/isl-uva.github.io
 future: true
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : NBC Lab
-tagline: Neuroinformatics and brain connectivity
+title : ISL
+tagline: Intelligent Systems Lab
 institution:
-  url: http://fiu.edu
-  name: Florida International University
+  url: https://www.virginia.edu/
+  name: University of Virginia
 department:
-  url: http://cn.fiu.edu
-  name: Cognitive Neuroscience
+  url: https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering
+  name: Mechanical and Aerospace Engineering
 author :
-  name : Taylor Salo
-  email : tsalo006@fiu.edu
-  github : tsalo
+  name : Siddharth Singh
+  email : sks4zk@virginia.edu
+  github : 30siddharth
 #  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
@@ -36,7 +36,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://www.nbclab.github.io
+production_url : http://www.isl-uva.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -93,7 +93,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : https-nbclab-github-io
+      short_name : https-isl-uva-github-io
     livefyre :
       site_id :
     intensedebate :
