@@ -19,4 +19,44 @@ Please find our lab updates and news below.
 
 <hr/>
 
+<hr/>
 
+{% for post in site.categories.news limit: 3 %}
+
+	<div class="bigspacer"></div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="head">
+				<a href="{{ post.url }}" class="off">{{ post.title }}</a>
+			</div>
+			<div class="smallnote">
+				{{ post.date | date_to_string }}
+			</div>
+			{% if post.image %}
+			  <div class="bigspacer"></div>
+				<img class="offset" src="{{ post.image }}" style="width:225px">
+			{% endif %}
+		</div>
+		<div class="col-md-8">
+			<div style="height:5px;"></div>
+			<div class="post">
+				{{ post.content }}
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+
+{% endfor %}
+
+<div class="bigspacer"></div>
+<div class="row">
+	<div class="col-md-12 text-center">
+		<a class="off" href="/{{ page.category }}/archive/">
+			<div class="smallhead">Archive</div>
+			<i class="text-gray fa fa-chevron-circle-down fa-2x"></i>
+		</a>
+	</div>
+</div>
+
+
+<div class="bigspacer"></div>
