@@ -1,10 +1,10 @@
 ---
 layout: news
-title: Prof. Chang is inducted as Fellow to Society of Manufacturing Engineers
+title: Prof. Chang, now SME Fellow
 author: Siddharth Singh
 category: news
 tags: []
-image: /assets/images/team/tian-xu.png
+image: /assets/images/team/prof-chang.png
 excerpt: Prof. Chang, leading the way in field of Manufacturing
 ---
 
