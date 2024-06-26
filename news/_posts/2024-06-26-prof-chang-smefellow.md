@@ -12,4 +12,5 @@ We are glad to share with everyone that Prof. Qing (Cindy) Chang was announced a
 
 Since 1986, the SME College of Fellows has honored those members who have made outstanding contributions to the social, technological, and educational aspects of the manufacturing profession. These nine industry professionals have earned this highly prestigious honor through 20 years or more of dedication and service to manufacturing.  
 
-Read her Q&A with the MAE department on how to upskill in the "New Industrial Revolution" with [MAE Department](https://engineering.virginia.edu/news-events/news/need-know-engineering-skills-get-job-new-industrial-revolution)
+Read her [Q&A with the MAE department](https://engineering.virginia.edu/news-events/news/need-know-engineering-skills-get-job-new-industrial-revolution)
+ on how to upskill in the "New Industrial Revolution".
