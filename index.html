@@ -70,7 +70,7 @@ categories:
 		</div>
 		<div class="bigspacer"></div>
     <div class="feedbox">
-			{% for news in site.categories.news limit:3 %}
+			{% for news in site.categories.news limit:4 %}
 
 				{% for member in site.categories.team %}
 					{% if member.handle == news.author %}
