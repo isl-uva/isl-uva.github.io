@@ -37,13 +37,18 @@ navorder: 2
 <div class="smallspacer"></div>
 <hr/>
 
-<div class="construction-text" style="text-align: center; font-size: 24px; color: #555;">
+<!-- <div class="construction-text" style="text-align: center; font-size: 24px; color: #555;">
     <p>This site is currently under construction. Please check back later for updates.</p>
-</div>
+</div> -->
+
+{{ researchpage.content }}
 
 <hr/>
 
-{{ researchpage.content }}
+<div class="bigspacer"></div>
+<div class="title text-center">Current Projects</div>
+<div class="smallspacer"></div>
+<hr/>
 
 <table align="center"; width=1250px>
     {% tablerow product in collecting cols:2 %}
