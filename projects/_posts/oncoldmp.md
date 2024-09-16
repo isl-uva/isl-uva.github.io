@@ -1,17 +1,17 @@
 ---
 layout: project
 title: Collaborative DMP for Dual Arm 
-contributors: [Siddharth Singh]
+contributors: [siddharth]
 handle: 
-status: collection, analysis, or complete
-type: dataset, pilot, or software
+status: 
+type: 
 
 # Optional
 website: https://sites.google.com/virginia.edu/oncoldmp/home
 grant:
 grant_url:
 image: assets/images/projects/2024-09-16-ONColDMP.png
-tagline:
+tagline: A novel method leveraging RL and DMP to enhance multi-robot collaboration.
 tags: []
 
 # Data and code
