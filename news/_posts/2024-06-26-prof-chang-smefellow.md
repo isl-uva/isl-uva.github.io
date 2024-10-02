@@ -1,6 +1,6 @@
 ---
 layout: news
-title: Prof. Chang, now SME Fellow
+title: Prof. Chang, now an SME Fellow
 author: Siddharth Singh
 category: news
 tags: []
