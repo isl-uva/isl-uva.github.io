@@ -4,7 +4,7 @@ title: Prof. Chang, now SME Fellow
 author: Siddharth Singh
 category: news
 tags: []
-image: /assets/images/team/prof-chang.png
+image: /assets/images/news/prof-chang-news.png
 excerpt: Prof. Chang, leading the way in field of Manufacturing
 ---
 
