@@ -9,7 +9,7 @@ image: /assets/images/team/prof-chang.png
 alumni: false
 
 # social
-cv: https://drive.google.com/file/d/16MklRxzRiPbzW5V2WHbcJcmUxL8p7o8K/view?usp=sharing
+cv: 
 nih_biosketch:
 email: qc9nq@virginia.edu
 github: 
@@ -19,7 +19,7 @@ figshare:
 publons:
 researchgate: Qing-Chang-6
 scholar: TfPemJcAAAAJ
-site:
+site: https://engineering.virginia.edu/faculty/qing-cindy-chang
 twitter: 
 ---
 
