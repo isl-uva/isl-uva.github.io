@@ -1,4 +1,4 @@
-# The ISL website (Borrowed from the [NBC Lab]((https://github.com/NBCLab/nbclab.github.io))
+# The ISL website (Borrowed from the [NBC Lab](https://github.com/NBCLab/nbclab.github.io))
 
 # How to add content
 
