@@ -6,6 +6,19 @@ group: navigation
 navorder: 1
 
 ---
+{% include JB/setup %}
+
+{% assign temp = site.categories.team | reverse %}
+{% assign current = "" | split: "" %}
+{% assign alumni = "" | split: "" %}
+{% for member in temp %}
+    {% if member.alumni != true %}
+		    {% assign current = current | push: member %}
+		{% else %}
+		    {% assign alumni = alumni | push: member %}
+		{% endif %}
+{% endfor %}
+
 <div class="bigspacer"></div>
 <div class="bigtitle text-center">The Team</div>
 <div class="smallspacer"></div>
@@ -120,3 +133,4 @@ navorder: 1
 	{% endtablerow %}
 </table>
 
+<div class="bigspacer"></div>
