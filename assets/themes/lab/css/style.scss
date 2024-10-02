@@ -176,19 +176,33 @@ a.off {
     vertical-align: middle;
 }
 
+// .big-member-photo {
+//     border-radius: 50%;
+//     width: 250px;
+//     height:auto;
+//     padding:1px;
+//     border:1px solid #021a40;
+// }
 .big-member-photo {
-    border-radius: 50%;
+    border-radius: 0; /* Remove circular shape */
     width: 250px;
-    height:auto;
-    padding:1px;
-    border:1px solid #021a40;
+    height: auto;
+    padding: 1px;
+    border: 1px solid #021a40;
 }
 
+
+// .member-photo {
+//     width: 175px;
+//     height:175px;
+//     border:1px solid #021a40;
+//     border-radius: 50%;
+// }
 .member-photo {
     width: 175px;
     height:175px;
     border:1px solid #021a40;
-    border-radius: 50%;
+    border-radius: 0;
 }
 
 .member-name {
