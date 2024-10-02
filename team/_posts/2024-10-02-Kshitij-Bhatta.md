@@ -13,7 +13,7 @@ cv:
 nih_biosketch:
 email: qpy8hh@virginia.edu
 github: 
-orcid:0000-0002-7884-9667
+orcid: 0000-0002-7884-9667
 osf: 
 figshare: 
 publons:
