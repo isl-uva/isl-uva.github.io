@@ -20,7 +20,7 @@ publons:
 researchgate: Muhammad-Waseem-44
 scholar: KZctKDAAAAAJ&hl
 site: 
-twitter: @waseem_0321
+twitter: waseem_0321
 ---
 
 Ph.D. (Ongoing) Mechanical & Aerospace Engineering at University of Virginia
