@@ -5,7 +5,7 @@ position: Ph.D. Student
 handle: SSingh
 nickname: Sid
 science_names: [Siddharth Singh]
-image: /assets/images/team/siddharth.png
+image: /assets/images/team/siddharth.jpg
 alumni: false
 
 # social
