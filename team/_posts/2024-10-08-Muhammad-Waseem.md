@@ -5,7 +5,7 @@ position: Graduate Student
 handle: mwaseem321
 nickname: Muhammad
 science_names: [Muhammad Waseem]
-image: /assets/images/team/kbhatta_placeholder.jpg
+image: /assets/images/team/muhammad_pic.jpg
 alumni: false
 
 # social
