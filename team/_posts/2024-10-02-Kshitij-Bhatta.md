@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Kshitij Bhatta
-position: Graduate Student
+position: Ph.D. Student
 handle: KBhatta
 nickname: Horizon
 science_names: [Kshitij Bhatta]
