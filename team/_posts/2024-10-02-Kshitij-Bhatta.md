@@ -5,7 +5,7 @@ position: Graduate Student
 handle: KBhatta
 nickname: Horizon
 science_names: [Kshitij Bhatta]
-image: /assets/images/team/kbhatta_placeholder.jpg
+image: /assets/images/team/kbhatta.png
 alumni: false
 
 # social
