@@ -45,8 +45,13 @@ navorder: 2
       {% if product.type == 'robotics' %}
         <h3>{{ product.title }}</h3>
         <p>{{ product.tagline }}</p>
-      {% endif %}
-    {% endfor %}
+         {% if product.image %}
+          {% assign image = product.image %}
+        {% else %}
+          {% assign image = "/assets/images/placeholder.png" %}
+        {% endif %}
+          {% endif %}
+        {% endfor %}
   </div>
 
   <!-- Manufacturing Systems Research Section -->
@@ -56,8 +61,13 @@ navorder: 2
       {% if product.type == 'manufacturing' %}
         <h3>{{ product.title }}</h3>
         <p>{{ product.tagline }}</p>
-      {% endif %}
-    {% endfor %}
+         {% if product.image %}
+          {% assign image = product.image %}
+        {% else %}
+          {% assign image = "/assets/images/placeholder.png" %}
+        {% endif %}
+          {% endif %}
+        {% endfor %}
   </div>
 </div>
 
