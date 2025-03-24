@@ -125,19 +125,9 @@ navorder: 2
 <div class="smallspacer"></div>
 <hr/>
 
-{{ researchpage.content }}
-
-<hr/>
-
-<div class="bigspacer"></div>
-<div class="title text-center">Current Projects</div>
-<div class="smallspacer"></div>
-<hr/>
-
 <div class="container" style="display: flex; justify-content: space-between;">
   <!-- Robotics Research Section -->
   <div class="column" style="width: 48%; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
-    <img src="/assets/icons/robotics-icon.png" alt="Robotics Icon" style="display: block; margin: 0 auto 20px; width: 60px; height: 60px;" />
     <h2 style="text-align: center;">Robotics Research</h2>
     {% for product in collecting %}
       {% if product.type == 'robotics' %}
@@ -149,7 +139,6 @@ navorder: 2
 
   <!-- Manufacturing Systems Research Section -->
   <div class="column" style="width: 48%; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
-    <img src="/assets/icons/manufacturing-icon.png" alt="Manufacturing Icon" style="display: block; margin: 0 auto 20px; width: 60px; height: 60px;" />
     <h2 style="text-align: center;">Manufacturing Systems Research</h2>
     {% for product in collecting %}
       {% if product.type == 'manufacturing' %}
@@ -159,3 +148,5 @@ navorder: 2
     {% endfor %}
   </div>
 </div>
+
+<hr/>
