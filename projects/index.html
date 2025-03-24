@@ -1,3 +1,5 @@
+
+<!--
 ---
 layout: default
 title: "Research"
@@ -40,7 +42,7 @@ navorder: 2
 <!-- <div class="construction-text" style="text-align: center; font-size: 24px; color: #555;">
     <p>This site is currently under construction. Please check back later for updates.</p>
 </div> -->
-
+<!--
 {{ researchpage.content }}
 
 <hr/>
@@ -80,6 +82,82 @@ navorder: 2
       </div>
     </div>
 <!--     <div class="smallspacer"></div> -->
+<!-- 
   {% endtablerow %}
 </table>
+-->
+
+---
+layout: default
+title: "Research"
+description: "Research projects in the lab"
+group: navigation
+navorder: 2
+---
+{% include JB/setup %}
+{% for page in site.categories.misc %}
+  {% if page.research %}
+  	{% assign researchpage = page %}
+  {% endif %}
+{% endfor %}
+
+{% assign software = "" | split: "" %}
+{% assign collecting = "" | split: "" %}
+{% assign analyzing = "" | split: "" %}
+{% assign complete = "" | split: "" %}
+{% assign other = "" | split: "" %}
+{% assign temp = site.categories.projects | reverse %}
+{% for item in temp %}
+    {% if item.type == "software" %}
+        {% assign software = software | push: item %}
+    {% elsif item.status == "collection" %}
+        {% assign collecting = collecting | push: item %}
+    {% elsif item.status == "analysis" %}
+        {% assign analyzing = analyzing | push: item %}
+    {% elsif item.status == "complete" %}
+        {% assign complete = complete | push: item %}
+    {% else %}
+        {% assign other = other | push: item %}
+    {% endif %}
+{% endfor %}
+
+<div class="bigspacer"></div>
+<div class="title text-center">Our Research</div>
+<div class="smallspacer"></div>
+<hr/>
+
+{{ researchpage.content }}
+
+<hr/>
+
+<div class="bigspacer"></div>
+<div class="title text-center">Current Projects</div>
+<div class="smallspacer"></div>
+<hr/>
+
+<div class="container" style="display: flex; justify-content: space-between;">
+  <!-- Robotics Research Section -->
+  <div class="column" style="width: 48%; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
+    <img src="/assets/icons/robotics-icon.png" alt="Robotics Icon" style="display: block; margin: 0 auto 20px; width: 60px; height: 60px;" />
+    <h2 style="text-align: center;">Robotics Research</h2>
+    {% for product in collecting %}
+      {% if product.type == 'robotics' %}
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.tagline }}</p>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <!-- Manufacturing Systems Research Section -->
+  <div class="column" style="width: 48%; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
+    <img src="/assets/icons/manufacturing-icon.png" alt="Manufacturing Icon" style="display: block; margin: 0 auto 20px; width: 60px; height: 60px;" />
+    <h2 style="text-align: center;">Manufacturing Systems Research</h2>
+    {% for product in collecting %}
+      {% if product.type == 'manufacturing' %}
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.tagline }}</p>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
 
