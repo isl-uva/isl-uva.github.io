@@ -129,7 +129,7 @@ navorder: 2
   <!-- Robotics Research Section -->
   <div class="column" style="width: 48%; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
     <h2 style="text-align: center;">Robotics Research</h2>
-    {% for product in collecting cols:2%}
+    {% for product in collecting %}
       {% if product.type == 'robotics' %}
         <h3>{{ product.title }}</h3>
         <p>{{ product.tagline }}</p>
@@ -140,7 +140,7 @@ navorder: 2
   <!-- Manufacturing Systems Research Section -->
   <div class="column" style="width: 48%; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
     <h2 style="text-align: center;">Manufacturing Systems Research</h2>
-    {% for product in collecting cols:2%}
+    {% for product in collecting %}
       {% if product.type == 'manufacturing' %}
         <h3>{{ product.title }}</h3>
         <p>{{ product.tagline }}</p>
