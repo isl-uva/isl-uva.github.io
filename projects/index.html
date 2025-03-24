@@ -8,7 +8,7 @@ navorder: 2
 {% include JB/setup %}
 {% for page in site.categories.misc %}
   {% if page.research %}
-  	{% assign researchpage = page %}
+    {% assign researchpage = page %}
   {% endif %}
 {% endfor %}
 
@@ -37,73 +37,74 @@ navorder: 2
 <div class="smallspacer"></div>
 <hr/>
 
-<div class="container" style="display: flex; justify-content: space-between;">
+<div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
   <!-- Robotics Research Section -->
-  <div class="column" style="width: 48%; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
+  <div class="column" style="width: 48%; padding: 20px; background-color: #f9f9f9; border-radius: 8px; margin-bottom: 20px;">
     <h2 style="text-align: center;">Robotics Research</h2>
     {% for product in collecting %}
       {% if product.type == 'robotics' %}
-            {% if product.image %}
-      {% assign image = product.image %}
-    {% else %}
-      {% assign image = "/assets/images/placeholder.png" %}
-    {% endif %}
+        {% if product.image %}
+          {% assign image = product.image %}
+        {% else %}
+          {% assign image = "/assets/images/placeholder.png" %}
+        {% endif %}
 
-    <div class="col-md-2.5 paperbox" style="min-width: 575px">
-      <div class="media" style="width:525px; height:350px">
-        <div class="media">
+        <div class="col-md-2.5 paperbox" style="width: 100%; max-width: 500px; padding: 20px;">
+          <div class="media" style="width: 100%; height: auto;">
             <a class="pull-left" href="{{ product.url }}">
-            <img width=300 class="media-object" src="{{ image }}" style="border:1px solid #808080;">
+              <img class="media-object" src="{{ image }}" style="width: 100%; max-width: 300px; height: auto; border: 1px solid #808080;">
             </a>
             <div class="media-body">
-                <div class="smallhead media-heading">
-                    {% if product.type contains "pilot" %}
-                        <a href="{{ product.url }}" class="off">[PILOT] {{ product.title }}</a>
-                    {% else %}
-                        <a href="{{ product.url }}" class="off">{{ product.title }}</a>
-                    {% endif %}
-                </div>
-                <div class="media-body">
-                  {{ product.tagline }}
-                </div>
+              <div class="smallhead media-heading">
+                {% if product.type contains "pilot" %}
+                  <a href="{{ product.url }}" class="off">[PILOT] {{ product.title }}</a>
+                {% else %}
+                  <a href="{{ product.url }}" class="off">{{ product.title }}</a>
+                {% endif %}
+              </div>
+              <div class="media-body">
+                {{ product.tagline }}
+              </div>
             </div>
+          </div>
         </div>
-      </div>
-    </div>
+      {% endif %}
+    {% endfor %}
   </div>
 
   <!-- Manufacturing Systems Research Section -->
-  <div class="column" style="width: 48%; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
+  <div class="column" style="width: 48%; padding: 20px; background-color: #f9f9f9; border-radius: 8px; margin-bottom: 20px;">
     <h2 style="text-align: center;">Manufacturing Systems Research</h2>
     {% for product in collecting %}
       {% if product.type == 'manufacturing' %}
-            {% if product.image %}
-      {% assign image = product.image %}
-    {% else %}
-      {% assign image = "/assets/images/placeholder.png" %}
-    {% endif %}
+        {% if product.image %}
+          {% assign image = product.image %}
+        {% else %}
+          {% assign image = "/assets/images/placeholder.png" %}
+        {% endif %}
 
-    <div class="col-md-2.5 paperbox" style="min-width: 575px">
-      <div class="media" style="width:525px; height:350px">
-        <div class="media">
+        <div class="col-md-2.5 paperbox" style="width: 100%; max-width: 500px; padding: 20px;">
+          <div class="media" style="width: 100%; height: auto;">
             <a class="pull-left" href="{{ product.url }}">
-            <img width=300 class="media-object" src="{{ image }}" style="border:1px solid #808080;">
+              <img class="media-object" src="{{ image }}" style="width: 100%; max-width: 300px; height: auto; border: 1px solid #808080;">
             </a>
             <div class="media-body">
-                <div class="smallhead media-heading">
-                    {% if product.type contains "pilot" %}
-                        <a href="{{ product.url }}" class="off">[PILOT] {{ product.title }}</a>
-                    {% else %}
-                        <a href="{{ product.url }}" class="off">{{ product.title }}</a>
-                    {% endif %}
-                </div>
-                <div class="media-body">
-                  {{ product.tagline }}
-                </div>
+              <div class="smallhead media-heading">
+                {% if product.type contains "pilot" %}
+                  <a href="{{ product.url }}" class="off">[PILOT] {{ product.title }}</a>
+                {% else %}
+                  <a href="{{ product.url }}" class="off">{{ product.title }}</a>
+                {% endif %}
+              </div>
+              <div class="media-body">
+                {{ product.tagline }}
+              </div>
             </div>
+          </div>
         </div>
-      </div>
-    </div>
+      {% endif %}
+    {% endfor %}
   </div>
 </div>
 
