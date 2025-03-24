@@ -43,15 +43,33 @@ navorder: 2
     <h2 style="text-align: center;">Robotics Research</h2>
     {% for product in collecting %}
       {% if product.type == 'robotics' %}
-        <h3>{{ product.title }}</h3>
-        <p>{{ product.tagline }}</p>
-         {% if product.image %}
-          {% assign image = product.image %}
-        {% else %}
-          {% assign image = "/assets/images/placeholder.png" %}
-        {% endif %}
-          {% endif %}
-        {% endfor %}
+            {% if product.image %}
+      {% assign image = product.image %}
+    {% else %}
+      {% assign image = "/assets/images/placeholder.png" %}
+    {% endif %}
+
+    <div class="col-md-2.5 paperbox" style="min-width: 575px">
+      <div class="media" style="width:525px; height:350px">
+        <div class="media">
+            <a class="pull-left" href="{{ product.url }}">
+            <img width=300 class="media-object" src="{{ image }}" style="border:1px solid #808080;">
+            </a>
+            <div class="media-body">
+                <div class="smallhead media-heading">
+                    {% if product.type contains "pilot" %}
+                        <a href="{{ product.url }}" class="off">[PILOT] {{ product.title }}</a>
+                    {% else %}
+                        <a href="{{ product.url }}" class="off">{{ product.title }}</a>
+                    {% endif %}
+                </div>
+                <div class="media-body">
+                  {{ product.tagline }}
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Manufacturing Systems Research Section -->
@@ -59,15 +77,33 @@ navorder: 2
     <h2 style="text-align: center;">Manufacturing Systems Research</h2>
     {% for product in collecting %}
       {% if product.type == 'manufacturing' %}
-        <h3>{{ product.title }}</h3>
-        <p>{{ product.tagline }}</p>
-         {% if product.image %}
-          {% assign image = product.image %}
-        {% else %}
-          {% assign image = "/assets/images/placeholder.png" %}
-        {% endif %}
-          {% endif %}
-        {% endfor %}
+            {% if product.image %}
+      {% assign image = product.image %}
+    {% else %}
+      {% assign image = "/assets/images/placeholder.png" %}
+    {% endif %}
+
+    <div class="col-md-2.5 paperbox" style="min-width: 575px">
+      <div class="media" style="width:525px; height:350px">
+        <div class="media">
+            <a class="pull-left" href="{{ product.url }}">
+            <img width=300 class="media-object" src="{{ image }}" style="border:1px solid #808080;">
+            </a>
+            <div class="media-body">
+                <div class="smallhead media-heading">
+                    {% if product.type contains "pilot" %}
+                        <a href="{{ product.url }}" class="off">[PILOT] {{ product.title }}</a>
+                    {% else %}
+                        <a href="{{ product.url }}" class="off">{{ product.title }}</a>
+                    {% endif %}
+                </div>
+                <div class="media-body">
+                  {{ product.tagline }}
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
