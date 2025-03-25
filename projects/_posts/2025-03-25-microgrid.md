@@ -1,17 +1,17 @@
 ---
 layout: project
-title: Online Adaptive Motion Planning with Skill-Learning
-contributors: [siddharth]
-handle: rlondmp
+title: Integrated Energy Optimization in Manufacturing Through Multiagent Deep Reinforcement Learning Holistic Control of Manufacturing, Microgrid Systems, and Battery Storage
+contributors: Muhammad Waseem
+handle: Microgrid_manufacturing
 status: collection
-type: robotics
+type: sustainable_manufacturing
 
 # Optional
-website: https://sites.google.com/virginia.edu/rl-ondmp/home
-grant:
+website: https://asmedigitalcollection.asme.org/manufacturingscience/article/147/6/061003/1211186
+grant: NSF
 grant_url:
-image: /assets/images/projects/2025-02-07-on-dmp.png
-tagline: A Hierachical method to generate adaptive motion plan when using a RL based skill
+image: /assets/images/projects/microgrid.png
+tagline: Integrated microgrid and manufacturing system with battery degradation control
 tags: []
 
 # Data and code
@@ -24,7 +24,7 @@ osf:
 ---
 {% include JB/setup %}
 
-In manufacturing, automating the generation of dynamic trajectories for di verse robots and loads in response to kinematic task requirements presents a significant challenge. Previous research has primarily addressed kine matic trajectory generation and dynamic motion planning as separate en deavors, with integrated solutions rarely explored. This paper presents a novel methodology that combines reinforcement learning (RL)-based kine matic skill learning, dynamic modeling and an enhanced version of Dynamic Movement Primitives (DMP). Utilizing a pre-established skill library, the RL-enabled method generates multiple kinematic trajectories that fulfill the specific task requirements. These trajectories are further refined by dynamic modeling, selecting paths that minimize energy consumption tailored to spe cific robot types and loads. The newly proposed Optimized Normalized Dy namic Motion Primitive (ON-DMP) enhances obstacle avoidance with min imal energy consumption, remaining effective in novel environments. Vali dated through both simulated and real-world experiments, this methodology shows robust results in improving task completion in dynamic real-world environments without the need of reprogramming .
+Microgrid technology integrates storage devices, renewable energy sources, and controllable loads and has been widely explored in residential, commercial, and critical facilities. However, its potential in manufacturing remains largely underexplored, where optimal control of microgrids containing energy storage systems (ESS) is crucial. Two primary challenges arise in integrated microgrid-manufacturing systems: fluctuating renewable energy output and nondeterministic polynomial (NP)-hard demand-side control. Addressing both challenges simultaneously increases complexity. This article proposes an integrated control considering ESS degradation, optimizing control on both the manufacturing demand and microgrid energy supply sides within the production constraints. It formulates the problem in a decentralized partially observable Markov decision process (Dec-POMDP) framework, treating the system as a multiagent environment. The multiagent deep deterministic policy gradient (MADDPG) algorithm is adapted to optimize control policies. Investigating the trained policies provides insights into their logic, and a rule-based policy is introduced for practical implementation. Experimental validation on a manufacturing system validates the effectiveness of the proposed method and the rule-based policy.
 
 
 
