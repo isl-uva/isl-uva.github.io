@@ -10,7 +10,7 @@ type: manufacturing
 website: 
 grant:
 grant_url:
-image: /assets/images/projects/2025-02-07-on-dmp.png
+image: /assets/images/projects/2025-03-25-Robot_FMSPM.png
 tagline: Integrated modeling of robot-enabled FMS with preventive maintenance and product quality considerations
 tags: []
 
