@@ -1,17 +1,17 @@
 ---
 layout: project
-title: Online Adaptive Motion Planning with Skill-Learning
-contributors: [siddharth]
-handle: rlondmp
+title: From Nash Q-learning to nash-MADDPG Advancements in multiagent control for multiproduct flexible manufacturing systems
+contributors: [Muhammad Waseem]
+handle: nash-maddpg
 status: collection
-type: robotics
+type: manufacturing
 
 # Optional
-website: https://sites.google.com/virginia.edu/rl-ondmp/home
-grant:
+website: [https://www.sciencedirect.com/science/article/pii/S0278612524000530]
+grant: NSF
 grant_url:
-image: /assets/images/projects/2025-02-07-on-dmp.png
-tagline: A Hierachical method to generate adaptive motion plan when using a RL based skill
+image: /assets/images/projects/nash_maddpg.png
+tagline: An integrated multiagent RL and game theory approach for complex manufacturing systems
 tags: []
 
 # Data and code
@@ -24,7 +24,14 @@ osf:
 ---
 {% include JB/setup %}
 
-In manufacturing, automating the generation of dynamic trajectories for di verse robots and loads in response to kinematic task requirements presents a significant challenge. Previous research has primarily addressed kine matic trajectory generation and dynamic motion planning as separate en deavors, with integrated solutions rarely explored. This paper presents a novel methodology that combines reinforcement learning (RL)-based kine matic skill learning, dynamic modeling and an enhanced version of Dynamic Movement Primitives (DMP). Utilizing a pre-established skill library, the RL-enabled method generates multiple kinematic trajectories that fulfill the specific task requirements. These trajectories are further refined by dynamic modeling, selecting paths that minimize energy consumption tailored to spe cific robot types and loads. The newly proposed Optimized Normalized Dy namic Motion Primitive (ON-DMP) enhances obstacle avoidance with min imal energy consumption, remaining effective in novel environments. Vali dated through both simulated and real-world experiments, this methodology shows robust results in improving task completion in dynamic real-world environments without the need of reprogramming .
+The emergence of flexible manufacturing systems (FMS) capable of processing multiple product types is a result of the growing demand for product customization and personalization. Such multiproduct systems are charac
+terized by a higher level of uncertainty and variability when compared to traditional manufacturing systems. This paper proposes a Nash integrated multiagent deep deterministic policy gradient method (Nash-MADDPG) to 
+control the mobile robots’ assignment in a multiproduct FMS to enable intelligent decision-making, interaction, and dynamic learning capabilities. A mathematical model of a multiproduct FMS from a previous study is 
+described, and system dynamic property is characterized by permanent production loss (PPL). Then, by observing PPL of the system and market demand for each product type, the multi-agent control scheme is 
+developed to assign mobile robots to load/unload various product types at various machines. First, a Nash game is developed among the mobile robots and to improve the cooperation, a collaboration cost is defined. This 
+collaboration cost is then used in the reward function of the multiagent deep deterministic policy gradient (MADDPG) algorithm. Second, the actions are jointly defined based on the action values of MADDPG, and the 
+mobile robots’ strategies in the Nash game, which update the environment to a new state. The performance of the proposed method is verified by comparing it with conventional Nash Q-learning, vanilla MADDPG, Q-learning based single agent reinforcement learning (SARL) and a first-come-first-serve (FCFS) based control. The results demonstrate that the multi-agent control scheme under the proposed Nash-MADDPG is effective in dealing with 
+cooperative FMS environment that involves complicated dynamics and uncertainties.
 
 
 
