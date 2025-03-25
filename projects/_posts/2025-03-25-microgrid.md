@@ -1,10 +1,10 @@
 ---
 layout: project
 title: Integrated Energy Optimization in Manufacturing Through Multiagent Deep Reinforcement Learning Holistic Control of Manufacturing, Microgrid Systems, and Battery Storage
-contributors: Muhammad Waseem
+contributors: [Muhammad Waseem]
 handle: Microgrid_manufacturing
 status: collection
-type: sustainable_manufacturing
+type: manufacturing
 
 # Optional
 website: https://asmedigitalcollection.asme.org/manufacturingscience/article/147/6/061003/1211186
