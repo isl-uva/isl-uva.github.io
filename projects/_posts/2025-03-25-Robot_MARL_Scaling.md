@@ -11,7 +11,7 @@ website:
 grant:
 grant_url:
 image: /assets/images/projects/2025-03-25-Robot_MARL_Scaling.png
-tagline: A MARL Framework for Scalable Manufacturing System Control: Train Small, Deploy Large Without Additional Training
+tagline: A MARL Framework for Scalable Manufacturing System Control.
 tags: []
 
 # Data and code
