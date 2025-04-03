@@ -84,9 +84,9 @@ navorder: 2
           {% assign image = "/assets/images/placeholder.png" %}
         {% endif %}
 
-        <div class="col-md-2.5 paperbox" style="width: 100%; max-width: 500px; padding: 20px;">
-          <div class="media" style="width: 100%; height: auto;">
-            <a class="pull-left" href="{{ product.url }}">
+       <div class="col-md-2.5 paperbox" style="width: 100%; max-width: 500px; padding: 20px;">
+          <div class="media" style="width: 100%; height: auto; display: flex; flex-direction: column; align-items: center;">
+            <a href="{{ product.url }}">
               <img class="media-object" src="{{ image }}" style="width: 100%; max-width: 300px; height: auto; border: 1px solid #808080;">
             </a>
             <div class="media-body">
