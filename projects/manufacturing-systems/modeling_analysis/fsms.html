@@ -1,0 +1,35 @@
+---
+layout: default
+title: "Modeling and Analysis – FSMS Projects"
+permalink: /research/manufacturing-systems/modeling_analysis/fsms.html
+---
+
+<div class="title text-center">Modeling and Analysis – Flexible Smart Manufacturing Systems (FSMS)</div>
+<hr/>
+
+<div class="container">
+  {% assign fsms_projects = site.categories.projects | where: "status", "collection" %}
+  {% for project in fsms_projects %}
+    {% if project.domain == "modeling and analysis" and project.system_type == "fsms" %}
+      <div class="col-md-2.5 paperbox" style="width: 100%; max-width: 600px; padding: 20px; margin-bottom: 30px; background-color: #f9f9f9; border-radius: 8px;">
+        <div class="media" style="display: flex; flex-direction: column; align-items: center;">
+          <a href="{{ project.url }}">
+            <img class="media-object" src="{{ project.image | default: '/assets/images/placeholder.png' }}" style="width: 100%; max-width: 400px; height: auto; border: 1px solid #ccc;">
+          </a>
+          <div class="media-body" style="margin-top: 15px; text-align: center;">
+            <div class="smallhead media-heading">
+              <a href="{{ project.url }}" class="off"><strong>{{ project.title }}</strong></a>
+            </div>
+            <div class="media-body">{{ project.tagline }}</div>
+            {% if project.contributors %}
+              <div class="media-body"><strong>Lab Contributors:</strong> {% for name in project.contributors %}{{ name }}{% unless forloop.last %}, {% endunless %}{% endfor %}</div>
+            {% endif %}
+            {% if project['paper website'] %}
+              <div class="media-body"><strong>Paper Website:</strong> <a href="{{ project['paper website'] }}" target="_blank">{{ project['paper website'] }}</a></div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

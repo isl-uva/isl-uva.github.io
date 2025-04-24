@@ -11,7 +11,7 @@ website:
 grant:
 grant_url:
 image: /assets/images/projects/2025-03-25-Robot_FMSPM.png
-tagline: Integrated modeling and control of robot-enabled FMS with preventive maintenance and product quality considerations
+tagline: Integrated modeling_analysis and control of robot-enabled FMS with preventive maintenance and product quality considerations
 tags: []
 
 # Data and code
